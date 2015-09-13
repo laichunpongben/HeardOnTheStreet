@@ -1,3 +1,10 @@
+/*
+A deck with 26 red and 26 black.
+Payoff: Red = +1, Black = -1
+Can stop any time. 
+Find best strategy
+*/
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +39,7 @@ namespace HeardOnTheStreet1_42
             Deck deck = new Deck();
             string result = deck.PlayManyGamesUnderDifferentStoppingRules();
             Console.WriteLine(result);
+            Console.Read();
         }
 
         private double GetUniformRandom()
