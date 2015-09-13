@@ -30,7 +30,7 @@ def PlayGame():
     while (remainingLives > 1):
         remainingLives = mr10.life + mr30.life + mr60.life
         if (mr10.life): 
-            if (remainingLives < 4): 
+            if (remainingLives < 3): 
                 if (mr60.life): mr10.Shoot(mr60)
                 elif (mr30.life): mr10.Shoot(mr30)
         if (mr60.life):
